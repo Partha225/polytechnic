@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1E3A8A",
+                        "secondary": "#3B82F6",
+                        "background": "#F8FAFC",
+                        "accent": "#22C55E",
+                        "on-background": "#0F172A",
+                        "surface": "#FFFFFF",
+                        "surface-container": "#F1F5F9",
+                        "surface-container-low": "#F8FAFC",
+                        "surface-container-lowest": "#FFFFFF",
+                        "on-surface": "#1E293B",
+                        "on-surface-variant": "#475569",
+                        "outline": "#94A3B8",
+                        "outline-variant": "#E2E8F0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+        }
+        .serif-text {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopNavBar (Shared Component COMPONENTS_9) -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl z-50 shadow-[0px_4px_20px_rgba(30,58,138,0.05)]">
+<div class="flex items-center gap-4">
+<span class="text-xl font-serif font-bold text-blue-900 dark:text-slate-50 italic tracking-tight">Nowgong Polytechnic Since 1961</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">About</a>
+<a class="text-blue-600 border-b-2 border-blue-600 font-semibold transition-colors duration-300" href="#">Departments</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">Admissions</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">Portal</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">T&amp;P</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">Gallery</a>
+<button class="bg-primary text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-all scale-95 duration-200">Contact</button>
+</div>
+</nav>
+<!-- SideNavBar (Shared Component COMPONENTS_9) -->
+<aside class="fixed left-0 top-0 h-full w-64 hidden lg:flex flex-col bg-slate-50 dark:bg-slate-950 shadow-xl rounded-r-xl pt-24 z-40">
+<div class="px-6 mb-8">
+<h2 class="font-serif text-lg text-blue-900">Institution Menu</h2>
+<p class="font-sans tracking-wide uppercase text-[10px] text-slate-500">Academic Excellence Since 1961</p>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="newspaper">newspaper</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">News</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 font-bold rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Academics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Student Life</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="domain">domain</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Infrastructure</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Research</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Alumni</span>
+</a>
+</nav>
+</aside>
+<main class="lg:ml-64 pt-32 px-8 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto mb-16">
+<span class="text-primary font-semibold tracking-widest uppercase text-xs mb-4 block">Academic Excellence</span>
+<h1 class="serif-text text-5xl md:text-6xl text-on-surface font-bold leading-tight mb-6">Our Academic <br/><span class="italic text-secondary">Departments</span></h1>
+<p class="text-on-surface-variant max-w-2xl leading-relaxed body-md">
+            Rooted in six decades of pedagogical heritage, Nowgong Polytechnic offers industry-aligned engineering programs designed to foster technical mastery and innovative thinking.
+        </p>
+</section>
+<!-- Departments Grid -->
+<section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-20">
+<!-- Civil Engineering -->
+<div class="bg-surface rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] p-8 border-b-4 border-secondary/20 hover:border-secondary transition-all duration-300 group">
+<div class="mb-6 flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-4xl group-hover:scale-110 transition-transform" data-icon="architecture">architecture</span>
+<span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Est. 1961</span>
+</div>
+<h3 class="serif-text text-2xl font-bold text-on-surface mb-4">Civil Engineering</h3>
+<div class="space-y-4">
+<p class="text-xs font-bold uppercase text-outline tracking-wider">Core Labs</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Surveying Lab</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Soil Mechanics</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Concrete Tech</li>
+</ul>
+</div>
+<button class="mt-8 text-secondary font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Explore Department <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+<!-- Mechanical Engineering (Active Concept Indicator) -->
+<div class="bg-white rounded-xl shadow-[0px_12px_40px_rgba(30,58,138,0.08)] p-8 border-2 border-primary transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-primary text-white text-[9px] font-bold px-2 py-1 rounded-full uppercase tracking-widest shadow-md">Active View</span>
+</div>
+<div class="mb-6 flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="settings_suggest">settings_suggest</span>
+<span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Est. 1961</span>
+</div>
+<h3 class="serif-text text-2xl font-bold text-on-surface mb-4">Mechanical Engineering</h3>
+<div class="space-y-4">
+<p class="text-xs font-bold uppercase text-outline tracking-wider">Core Labs</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Thermal Engineering</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Workshop Practice</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Fluid Mechanics</li>
+</ul>
+</div>
+<div class="mt-8">
+<span class="inline-block w-8 h-1 bg-primary rounded-full"></span>
+</div>
+</div>
+<!-- Electrical Engineering -->
+<div class="bg-surface rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] p-8 border-b-4 border-secondary/20 hover:border-secondary transition-all duration-300 group">
+<div class="mb-6 flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-4xl group-hover:scale-110 transition-transform" data-icon="electric_bolt">electric_bolt</span>
+<span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Est. 1961</span>
+</div>
+<h3 class="serif-text text-2xl font-bold text-on-surface mb-4">Electrical Engineering</h3>
+<div class="space-y-4">
+<p class="text-xs font-bold uppercase text-outline tracking-wider">Core Labs</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Electrical Machines</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Control Systems</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Digital Electronics</li>
+</ul>
+</div>
+<button class="mt-8 text-secondary font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Explore Department <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+<!-- Computer Engineering -->
+<div class="bg-surface rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] p-8 border-b-4 border-secondary/20 hover:border-secondary transition-all duration-300 group">
+<div class="mb-6 flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-4xl group-hover:scale-110 transition-transform" data-icon="terminal">terminal</span>
+<span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Est. 2008</span>
+</div>
+<h3 class="serif-text text-2xl font-bold text-on-surface mb-4">Computer Engineering</h3>
+<div class="space-y-4">
+<p class="text-xs font-bold uppercase text-outline tracking-wider">Core Labs</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>AI &amp; Data Science</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Network Security</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>Software Dev</li>
+</ul>
+</div>
+<button class="mt-8 text-secondary font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Explore Department <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+</section>
+<!-- Expanded View: Mechanical Engineering -->
+<section class="max-w-7xl mx-auto">
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Hero Image/Info -->
+<div class="lg:col-span-4 bg-slate-900 relative min-h-[400px]">
+<img alt="Mechanical Engineering Lab" class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Modern high-tech mechanical engineering workshop with precision CNC machinery and industrial tools in a clean well-lit facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnShYvZ-iWCVXHg0qzYwc26iF6VGNanX7YYhWwr9cORBpELC99B3x9iKesUFbgDlX_02rDYVySryFKlRgz5UNGn1c4wbBfl4rd7SzmOwMaT2ree0wRHBaA82s--mX3suykkbSlbODHugG9Ne5pzcwqeOcnwqn8PJL1T0DeNiQrO8nuXvwn0F24Z9ZoB6WluRWCtZNtctJhhSzhJQGaSAHYJPC7hQCt6nGpc971fEaORonubelX7cGTXI2zPkYbC7MlWv2mj4cMyW8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-blue-950 to-transparent p-10 flex flex-col justify-end">
+<h2 class="serif-text text-3xl text-white font-bold mb-2">Mechanical Engineering</h2>
+<p class="text-blue-200 text-sm italic">Forging the future of industrial design and robotics.</p>
+</div>
+</div>
+<!-- Right Tabs & Content -->
+<div class="lg:col-span-8 p-10">
+<div class="flex flex-wrap gap-8 border-b border-slate-100 mb-10 overflow-x-auto pb-1">
+<button class="text-outline font-medium px-1 pb-4 text-xs uppercase tracking-widest hover:text-primary transition-colors whitespace-nowrap">Faculty</button>
+<button class="text-outline font-medium px-1 pb-4 text-xs uppercase tracking-widest hover:text-primary transition-colors whitespace-nowrap">Advanced Labs</button>
+<button class="text-primary border-b-2 border-primary font-bold px-1 pb-4 text-xs uppercase tracking-widest whitespace-nowrap">Placement</button>
+<button class="text-outline font-medium px-1 pb-4 text-xs uppercase tracking-widest hover:text-primary transition-colors whitespace-nowrap">Syllabus</button>
+</div>
+<!-- Placement Content Preview -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div>
+<h4 class="serif-text text-xl font-bold text-on-surface mb-2">Placement Success</h4>
+<div class="w-12 h-1 bg-accent mb-4 rounded-full"></div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                Our mechanical engineering graduates are highly sought after by global leaders in manufacturing, automotive, and heavy industries.
+                            </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-xs font-semibold text-slate-600 hover:border-accent hover:text-accent transition-colors">ITC Ltd.</span>
+<span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-xs font-semibold text-slate-600 hover:border-accent hover:text-accent transition-colors">Apollo Tyres</span>
+<span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-xs font-semibold text-slate-600 hover:border-accent hover:text-accent transition-colors">TATA Motors</span>
+<span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-xs font-semibold text-slate-600 hover:border-accent hover:text-accent transition-colors">Mahindra</span>
+</div>
+</div>
+<div class="bg-blue-50/50 rounded-xl p-6 border border-blue-100">
+<h4 class="font-bold text-primary text-sm uppercase tracking-wider mb-4">Academic Structure</h4>
+<ul class="space-y-4">
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">3 Years</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Total Credits</span>
+<span class="font-bold text-on-surface">120 Units</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Annual Intake</span>
+<span class="font-bold text-on-surface">60 Seats</span>
+</li>
+</ul>
+<button class="w-full mt-6 bg-primary text-white py-3 rounded-lg font-bold text-sm hover:bg-blue-800 transition-all shadow-lg shadow-blue-900/10">Download Syllabus (PDF)</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component COMPONENTS_9) -->
+<footer class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-4 gap-8 bg-blue-950 dark:bg-black text-slate-400 font-sans text-sm leading-relaxed">
+<div class="col-span-1 md:col-span-2">
+<h2 class="text-slate-50 font-serif text-2xl mb-4">Nowgong Polytechnic</h2>
+<p class="max-w-sm mb-6">Empowering youth through technical excellence and ethical foundations since 1961. A leading technical institution in the heart of Assam.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-white opacity-60 hover:opacity-100 cursor-pointer transition-opacity" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-white opacity-60 hover:opacity-100 cursor-pointer transition-opacity" data-icon="language">language</span>
+<span class="material-symbols-outlined text-white opacity-60 hover:opacity-100 cursor-pointer transition-opacity" data-icon="alternate_email">alternate_email</span>
+</div>
+</div>
+<div>
+<h3 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="hover:text-blue-300 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">RTI</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">AICTE Feedback</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Contact</h3>
+<p>Nagaon, Assam - 782001</p>
+<p class="mt-2">Phone: +91 3672 233XXX</p>
+<p>Email: info@nowgongpolytechnic.edu</p>
+</div>
+<div class="col-span-full pt-8 mt-8 border-t border-blue-900/50 text-center text-xs text-slate-500">
+        © 2024 Nowgong Polytechnic. All Rights Reserved.
+    </div>
+</footer>
+</body></html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admissions | Nowgong Polytechnic Since 1961</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1E3A8A",
+                        "secondary": "#3B82F6",
+                        "background": "#F8FAFC",
+                        "accent": "#22C55E",
+                        "surface-bright": "#FFFFFF",
+                        "on-surface": "#0F172A",
+                        "surface-container": "#F1F5F9",
+                        "surface-container-highest": "#E2E8F0",
+                        "surface-container-low": "#F8FAFC",
+                        "outline": "#94A3B8",
+                        "on-primary": "#FFFFFF",
+                        "primary-container": "#DBEAFE",
+                        "on-primary-container": "#1E3A8A",
+                        "secondary-container": "#EFF6FF",
+                        "on-secondary-container": "#1D4ED8",
+                        "on-surface-variant": "#475569",
+                        "outline-variant": "#CBD5E1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-tension {
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl z-50 shadow-[0px_4px_20px_rgba(30,58,138,0.05)]">
+<div class="text-xl font-serif font-bold text-blue-900 dark:text-slate-50">
+            Nowgong Polytechnic Since 1961
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">Departments</a>
+<a class="text-blue-600 border-b-2 border-blue-600 font-semibold transition-colors duration-300" href="#">Admissions</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">Portal</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">T&amp;P</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-300" href="#">Gallery</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-medium shadow-lg hover:scale-95 duration-200">
+                Contact
+            </button>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 hidden lg:flex flex-col bg-slate-50 dark:bg-slate-950 shadow-xl z-40 p-6 pt-24 rounded-r-xl">
+<div class="mb-8">
+<p class="font-serif text-lg text-blue-900">Institution Menu</p>
+<p class="font-sans tracking-wide uppercase text-[10px] text-slate-500">Academic Excellence Since 1961</p>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg transition-all ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">News</span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 font-bold rounded-lg transition-all ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Academics</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg transition-all ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">diversity_3</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Student Life</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg transition-all ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">domain</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Infrastructure</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg transition-all ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">science</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Research</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg transition-all ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-sans tracking-wide uppercase text-[10px]">Alumni</span>
+</a>
+</nav>
+</aside>
+<main class="lg:pl-64 pt-24 pb-12">
+<!-- Hero Section -->
+<header class="px-8 py-12 md:py-20 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-3/5">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-[10px] uppercase tracking-widest font-bold mb-4">Admission Open 2024-25</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface editorial-tension leading-[1.1] mb-6">
+                        Shape Your <span class="italic text-primary">Technical</span> Future.
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed mb-8">
+                        Join Assam's heritage technical institution. We cultivate expertise through hands-on learning and academic rigor since 1961.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:bg-primary/90 transition-all hover:scale-[0.98]">Apply Now</button>
+<button class="px-8 py-4 rounded-full text-lg font-semibold text-primary border-2 border-primary/20 hover:bg-primary/5 transition-colors">Download Prospectus</button>
+</div>
+</div>
+<div class="md:w-2/5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img alt="vibrant educational setting with students collaborating in a modern engineering lab with technical blueprints and sophisticated equipment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxtMFuDYhBORYgvcSeKf7kFpv6AdBU38sym6JG44B3XvVxcxys5L-OVUrbcGi-UXsh_BdmzRroVCvULao3_ICas4ioT0zJs01rEwVwEAtuyaDKrHmuHmZGfYgKk46y8WRE8b3Ecf3XfWnnvdXelN26H0m1Kk4rIGvc19sc0W90bezZBWPg0YyV9jG4O17kHyn3i1xMCTK4CRUesZCUdBnBYr2MUn1hn54hRympHjGvglelZaM7mNrlinPmyat8q6fPePqOVqc-jfM"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl z-20">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-tighter text-slate-500">AICTE Approved</p>
+<p class="text-sm font-bold text-on-surface">60+ Years of Excellence</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Eligibility Bento Grid -->
+<section class="px-8 py-16 bg-surface-container overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-headline font-bold mb-12 flex items-center gap-4">
+                    Eligibility Check
+                    <span class="h-px flex-1 bg-outline-variant/30"></span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-white p-8 rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] border border-outline-variant/10">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">Academic Foundation</h3>
+<p class="text-on-surface-variant">The minimum requirements for diploma entrance.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-4xl">fact_check</span>
+</div>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-accent font-bold">done</span>
+</div>
+<div>
+<p class="font-bold">10th Standard Pass</p>
+<p class="text-sm text-on-surface-variant">Must have passed the High School Leaving Certificate (HSLC) or equivalent examination from a recognized board.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-accent font-bold">done</span>
+</div>
+<div>
+<p class="font-bold">Core Subject Proficiency</p>
+<p class="text-sm text-on-surface-variant">Mandatory subjects: Mathematics and Science. Minimum aggregate marks of 40% (General) or 35% (SC/ST) in these subjects.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between shadow-xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold mb-4">Age Limit</h3>
+<p class="opacity-90 leading-relaxed">Candidate should be between 15 and 20 years of age as of 1st July of the admission year. (Relaxation applicable for reserved categories).</p>
+</div>
+<div class="mt-8 relative z-10">
+<button class="w-full bg-white text-primary py-3 rounded-full font-bold hover:bg-slate-100 transition-all">Check Detailed Criteria</button>
+</div>
+<span class="material-symbols-outlined absolute -bottom-8 -right-8 text-[120px] opacity-10 rotate-12">calendar_today</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Application Steps -->
+<section class="px-8 py-20 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Application Pathway</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">A streamlined 4-step process to secure your seat at Nowgong Polytechnic.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+<!-- Connector Line (Desktop) -->
+<div class="hidden md:block absolute top-12 left-1/2 -translate-x-1/2 w-3/4 h-[2px] bg-outline-variant/30 z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 group">
+<div class="w-24 h-24 bg-surface-container-highest rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background transition-transform group-hover:scale-110 duration-300">
+<span class="text-2xl font-bold text-primary">01</span>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-xl mb-2">Registration</h4>
+<p class="text-sm text-on-surface-variant">Create your account on the PAT (Polytechnic Admission Test) portal.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 group">
+<div class="w-24 h-24 bg-surface-container-highest rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background transition-transform group-hover:scale-110 duration-300">
+<span class="text-2xl font-bold text-primary">02</span>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-xl mb-2">Entrance Test</h4>
+<p class="text-sm text-on-surface-variant">Appear for the PAT examination conducted by DTE, Assam.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 group">
+<div class="w-24 h-24 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background shadow-lg transition-transform group-hover:scale-110 duration-300">
+<span class="text-2xl font-bold">03</span>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-xl mb-2">Choice Filling</h4>
+<p class="text-sm text-on-surface-variant">Select Nowgong Polytechnic as your preferred institution.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10 group">
+<div class="w-24 h-24 bg-surface-container-highest rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background transition-transform group-hover:scale-110 duration-300">
+<span class="text-2xl font-bold text-primary">04</span>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-xl mb-2">Verification</h4>
+<p class="text-sm text-on-surface-variant">Submit physical documents for authentication and fee payment.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Document Upload & Counselling Info -->
+<section class="px-8 py-16 bg-surface-container">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Document Guide -->
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<h3 class="text-2xl font-headline font-bold mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">description</span>
+                        Document Checklist
+                    </h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
+<span class="text-on-surface">HSLC Admit Card &amp; Marksheet</span>
+<span class="material-symbols-outlined text-slate-400">cloud_upload</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
+<span class="text-on-surface">PAT Admit Card &amp; Result</span>
+<span class="material-symbols-outlined text-slate-400">cloud_upload</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
+<span class="text-on-surface">Permanent Residential Certificate (PRC)</span>
+<span class="material-symbols-outlined text-slate-400">cloud_upload</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
+<span class="text-on-surface">Caste/Category Certificate (if applicable)</span>
+<span class="material-symbols-outlined text-slate-400">cloud_upload</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
+<span class="text-on-surface">Recent Passport Size Photos (3 nos)</span>
+<span class="material-symbols-outlined text-slate-400">cloud_upload</span>
+</div>
+</div>
+<p class="mt-6 text-xs text-on-surface-variant italic font-medium">Note: All documents must be self-attested before uploading in PDF format (max 500kb).</p>
+</div>
+<!-- Counselling Info -->
+<div class="flex flex-col gap-6">
+<div class="bg-white p-8 rounded-xl border-l-4 border-primary shadow-sm">
+<h3 class="text-2xl font-headline font-bold mb-4">Counselling Session</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Selected candidates will be invited for online/offline counselling based on their PAT merit rank. This is where you finalize your branch selection.
+                        </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-slate-50 rounded-lg">
+<p class="text-xs uppercase font-label tracking-wider text-slate-500 mb-1">Next Session</p>
+<p class="font-bold">August 14, 2024</p>
+</div>
+<div class="p-4 bg-slate-50 rounded-lg">
+<p class="text-xs uppercase font-label tracking-wider text-slate-500 mb-1">Venue</p>
+<p class="font-bold">College Seminar Hall</p>
+</div>
+</div>
+</div>
+<div class="bg-primary text-white p-8 rounded-xl shadow-xl flex-1 flex flex-col justify-center">
+<h4 class="text-xl font-bold mb-2">Need Help with Admission?</h4>
+<p class="opacity-80 mb-6 text-sm">Our helpdesk is available from 10:00 AM to 4:00 PM on all working days.</p>
+<div class="flex items-center gap-4">
+<button class="bg-secondary text-white px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-secondary/90">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                                Call Support
+                            </button>
+<a class="text-sm font-bold underline underline-offset-4 decoration-white/30 hover:decoration-white" href="#">Email Admissions</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-8 py-24 text-center max-w-4xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-8">Ready to begin your journey?</h2>
+<p class="text-on-surface-variant text-lg mb-12">Don't miss the opportunity to be part of the class of 2024. Application window closes soon.</p>
+<div class="inline-flex flex-col items-center gap-6">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full text-xl font-bold shadow-[0px_20px_40px_rgba(30,58,138,0.2)] hover:translate-y-[-2px] hover:bg-primary/95 transition-all">Start Your Application Now</button>
+<div class="flex items-center gap-2 text-sm font-medium text-slate-500">
+<span class="material-symbols-outlined text-accent font-bold" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    SECURE ADMISSION PORTAL
+                </div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-4 gap-8 bg-blue-950 dark:bg-black font-sans text-sm leading-relaxed">
+<div class="md:col-span-1">
+<div class="text-slate-50 font-serif text-2xl mb-4">Nowgong Polytechnic</div>
+<p class="text-slate-400 font-sans text-sm leading-relaxed mb-6">Empowering minds, building futures through technical education since 1961. Nagaon, Assam.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-blue-400 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Quick Links</h5>
+<div class="flex flex-col gap-3">
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">Admissions 2024</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">Fee Structure</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">Branches</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">Placement Records</a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Legal &amp; Policy</h5>
+<div class="flex flex-col gap-3">
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">RTI</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors" href="#">AICTE Feedback</a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Newsletter</h5>
+<p class="text-slate-400 text-sm mb-4">Stay updated with academic news and events.</p>
+<div class="flex gap-2">
+<input class="bg-slate-800 border-none rounded-lg text-white px-4 py-2 w-full text-sm" placeholder="Email" type="email"/>
+<button class="bg-blue-400 text-white p-2 rounded-lg hover:bg-blue-300 transition-colors"><span class="material-symbols-outlined">send</span></button>
+</div>
+<p class="mt-8 text-slate-500 text-[10px] uppercase tracking-widest font-bold">© 2024 Nowgong Polytechnic. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1E3A8A",
+                        "secondary": "#3B82F6",
+                        "background": "#F8FAFC",
+                        "accent": "#22C55E",
+                        "surface": "#F8FAFC",
+                        "on-surface": "#0F172A",
+                        "on-surface-variant": "#475569",
+                        "surface-container": "#F1F5F9",
+                        "surface-container-low": "#F8FAFC",
+                        "surface-container-high": "#E2E8F0",
+                        "surface-container-highest": "#CBD5E1",
+                        "surface-container-lowest": "#FFFFFF",
+                        "on-primary": "#FFFFFF",
+                        "primary-container": "#DBEAFE",
+                        "on-primary-container": "#1E3A8A",
+                        "secondary-container": "#E0F2FE",
+                        "on-secondary-container": "#0369A1",
+                        "outline": "#94A3B8",
+                        "outline-variant": "#E2E8F0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, #F8FAFC 0%, rgba(248, 250, 252, 0) 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar (Shared Component COMPONENTS_9) -->
+<header class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl z-50 shadow-[0px_4px_20px_rgba(30,58,138,0.05)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<span class="text-xl font-headline font-bold text-primary dark:text-slate-50 tracking-tight">Nowgong Polytechnic Since 1961</span>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-secondary border-b-2 border-secondary font-semibold transition-colors duration-300" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-secondary transition-colors duration-300" href="#">Departments</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-secondary transition-colors duration-300" href="#">Admissions</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-secondary transition-colors duration-300" href="#">Portal</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-secondary transition-colors duration-300" href="#">T&amp;P</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-secondary transition-colors duration-300" href="#">Gallery</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-blue-800 text-on-primary px-6 py-2 rounded-full font-medium transition-all duration-200 scale-95 active:scale-90">Contact</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Campus Main Building" class="w-full h-full object-cover" data-alt="stately colonial-style brick university building with manicured lawn and ancient trees under a soft morning sun in a cinematic wide shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxKxiJGpTe6VMBLoHKALnewj2i2vgGihezwIZBcX22mYvqkwu6GxDJXmTR1bFNZOY4hJwvXNcZMhBPyZjVRxQsQZGz4x474Xf4hbw4AfwdIoZUOpizw_wOUCgTlWDeC0OS2Yrph4j-80jgqxp4EZ3fTvnOpy3TqnGVLXf4B2cIpaKb2uHfCb75xa1wnku_Z7H9rT7fql-7k1VIfIFZBGYB837dVxgIuVV8oKYZ5sE9UzPJ0BkvsMToHudiz7XOJUmWlnx5SPjeCBs"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-4xl animate-fade-in">
+<div class="mb-8 flex justify-center">
+<div class="p-4 bg-surface-container-lowest rounded-full shadow-lg">
+<span class="material-symbols-outlined text-primary text-6xl">account_balance</span>
+</div>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface mb-6 tracking-tight">
+                    Empowering Technical Excellence Since 1961
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Nurturing the next generation of engineers and innovators with a legacy of academic rigor and industry-aligned training.
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-semibold shadow-xl hover:scale-105 transition-transform">Admissions</button>
+<button class="bg-surface-container-lowest text-primary px-8 py-3 rounded-full font-semibold shadow-md hover:bg-surface-container-low transition-colors">Departments</button>
+<button class="bg-transparent border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-on-primary transition-all">Student Portal</button>
+</div>
+</div>
+</section>
+<!-- Quick Access Panel -->
+<section class="px-8 -mt-20 relative z-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">campaign</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Notices &amp; Updates</h3>
+<p class="text-on-surface-variant text-sm mb-4">Stay informed with the latest campus announcements and news.</p>
+<a class="text-primary font-semibold flex items-center gap-2 text-sm group-hover:translate-x-2 transition-transform" href="#">View All <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Admissions</h3>
+<p class="text-on-surface-variant text-sm mb-4">Enrollment guides, eligibility criteria, and online application portal.</p>
+<a class="text-primary font-semibold flex items-center gap-2 text-sm group-hover:translate-x-2 transition-transform" href="#">Apply Now <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">account_tree</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Departments</h3>
+<p class="text-on-surface-variant text-sm mb-4">Explore our specialized engineering and technical branches.</p>
+<a class="text-primary font-semibold flex items-center gap-2 text-sm group-hover:translate-x-2 transition-transform" href="#">Explore <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_4px_20px_rgba(30,58,138,0.05)] hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">login</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Student Login</h3>
+<p class="text-on-surface-variant text-sm mb-4">Access your dashboard, grades, and academic resources.</p>
+<a class="text-primary font-semibold flex items-center gap-2 text-sm group-hover:translate-x-2 transition-transform" href="#">Login <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+</div>
+</section>
+<!-- Announcements Feed -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl font-bold mb-6">Real-time Announcements</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Keep track of important deadlines, exam schedules, and administrative notifications as they happen.</p>
+<div class="bg-secondary-container p-6 rounded-xl inline-block border-l-4 border-secondary">
+<p class="font-bold text-on-secondary-container">Admissions for 2024 session are now open.</p>
+<p class="text-xs mt-2 uppercase tracking-widest font-label font-bold text-secondary">Action Required</p>
+</div>
+</div>
+<div class="lg:col-span-2 space-y-4 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
+<!-- Notice 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl flex items-start gap-4 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col items-center justify-center min-w-[60px] p-2 bg-primary-container rounded-lg text-primary">
+<span class="text-xl font-bold">12</span>
+<span class="text-[10px] uppercase font-bold">Oct</span>
+</div>
+<div>
+<span class="inline-block px-2 py-1 bg-accent/10 text-accent text-[10px] uppercase font-bold rounded mb-2">Exam</span>
+<h4 class="font-bold text-lg">Final Semester Examination Schedule Released</h4>
+<p class="text-on-surface-variant text-sm mt-1">Detailed timetable for all branches is available on the portal...</p>
+</div>
+</div>
+<!-- Notice 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl flex items-start gap-4 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col items-center justify-center min-w-[60px] p-2 bg-primary-container rounded-lg text-primary">
+<span class="text-xl font-bold">08</span>
+<span class="text-[10px] uppercase font-bold">Oct</span>
+</div>
+<div>
+<span class="inline-block px-2 py-1 bg-accent/10 text-accent text-[10px] uppercase font-bold rounded mb-2">Hostel</span>
+<h4 class="font-bold text-lg">Hostel Re-allotment Notice for Final Year</h4>
+<p class="text-on-surface-variant text-sm mt-1">Students must submit their preference forms by the end of the week...</p>
+</div>
+</div>
+<!-- Notice 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl flex items-start gap-4 hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col items-center justify-center min-w-[60px] p-2 bg-primary-container rounded-lg text-primary">
+<span class="text-xl font-bold">05</span>
+<span class="text-[10px] uppercase font-bold">Oct</span>
+</div>
+<div>
+<span class="inline-block px-2 py-1 bg-accent/10 text-accent text-[10px] uppercase font-bold rounded mb-2">Admissions</span>
+<h4 class="font-bold text-lg">Special Counseling Round for Diploma Vacancies</h4>
+<p class="text-on-surface-variant text-sm mt-1">Walk-in interviews for the remaining seats in civil engineering...</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Institute Highlights -->
+<section class="py-24 px-8 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center p-8 bg-surface-container-low rounded-2xl border border-outline-variant">
+<p class="font-headline text-5xl font-bold text-primary mb-2">1961</p>
+<p class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Established Year</p>
+</div>
+<div class="text-center p-8 bg-surface-container-low rounded-2xl border border-outline-variant">
+<p class="font-headline text-5xl font-bold text-primary mb-2">AICTE</p>
+<p class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Approved Institution</p>
+</div>
+<div class="text-center p-8 bg-surface-container-low rounded-2xl border border-outline-variant">
+<p class="font-headline text-5xl font-bold text-primary mb-2">4+</p>
+<p class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Core Branches</p>
+</div>
+<div class="text-center p-8 bg-surface-container-low rounded-2xl border border-outline-variant">
+<p class="font-headline text-5xl font-bold text-primary mb-2">15k+</p>
+<p class="font-label uppercase tracking-widest text-xs text-on-surface-variant">Success Stories</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Life Preview -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline text-4xl font-bold">Campus Life Preview</h2>
+<p class="text-on-surface-variant mt-2">Beyond the classroom — fostering culture, sports, and creativity.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Visit Gallery <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-2xl">
+<img alt="Student Library" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="bright modern library interior with tall wooden shelves and students studying at large common tables in natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqS-wn-hQn9RZZTNIzH1AKVKM0jdziCzM_xLPD034AD1kVwW7Nipa3CsHxGIJSpC2npJIcltYLF0mX0ctKN8tM8y-7fmJZWqUixpFaAlGg-UK_Kmzij5XkUifPPYeIZSY6uv1a7cSxPHlofaRpQ-CbENv-rPbty2s1PX3E33XcGtA2iUug_BSF1DzLXnJiEk19oFstxqO2JCN0AUBrqhz56fViYabFj1XWoOnVa6DWBRh94P7CsXYnR-5st2vLtB7TV-qKAiaUUYE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline text-2xl font-bold">Knowledge Hub</span>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-2xl">
+<img alt="Engineering Lab" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern engineering laboratory with mechanical testing equipment and students in white lab coats working on technical projects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGzvlvAXmNNQZLUsUV47OGsKnZ02ea3Q-6O7dzEO0fMG5x6yH63dD4a3kAQ9ioYp_Yw3QP_GkW82sL_NaDEcZnIKLLI-EVV3jMhD1yT8vmBk98ZU6NIEkgJEkyRuNbG-WyXYWGN6pFr4itAqvbR8nRpHwLBdZmOwVcO0B4hwuW5TfHtgC-uVxARbWJHXxSCmkm_P2pcvmnatQPN8BH0gspK9qfj53L84f2D-rz2eluwBeYtCv5_gE0PMG9XEZnqtgKQIJiz4meAV0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+<span class="text-white font-bold">Tech Innovation</span>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-2xl">
+<img alt="Classroom" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="spacious bright classroom with tiered seating and whiteboard full of mathematical formulas in a heritage building setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_g5ye4zQ2DZJhPeN4_yqQtjxPhWGJT-yKNNOizWgImcWA9mxAfIU4WO1jejuoQIzLfTyTD-nFjyqzwXK0zF5kbOWYxKn2hqOrcLsUwUnsyJCxHepLdfIWO9vtbWBEQ02GOEO1tMpTybJRrdlEVlgKnmefHGgd_a56aIKXpS8Jyq5w_NjCh7-qKRuOHL-ePMua5pALo98ZwqU3b4D8C7Bu34NH1tOyOHBigwvmfLGEEdT7OoiF6u4H8-i9hj96VvyDImMTjP__S3c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+<span class="text-white font-bold">Academic Core</span>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden rounded-2xl">
+<img alt="Campus Green" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="lush green campus quadrangle with historical clock tower building in background and groups of students sitting on the grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoUFVeTgKQZW4Wm0Ix7NSJwnd-nOn-bZRXrP0ncBqzRKF8YaA4NH_5TkMLE_I5AfYmWCjz7kAw1grY5JPlhIpLmtFOq17oDH8OnG-fwOnZSXsBZEjbZzdUiVGNgZBelaHuJvJ7p8ANNx6VwBGrbm0BELyy6zxzUjp538sZvvYS0aSk09VmfzPxO2EezHMBzltFvgjI4P8bRSrRRcf5rh6Rhw90EbnGmSS32njE6pMqML5YCSl77BWKCONW6_-IIiUvBxaHRN5siCA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<span class="text-white font-headline text-xl font-bold">Student Life</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component COMPONENTS_9) -->
+<footer class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-4 gap-8 bg-blue-950 dark:bg-black text-slate-400 font-sans text-sm leading-relaxed">
+<div class="md:col-span-1">
+<h2 class="text-slate-50 font-headline text-2xl mb-4 font-bold">Nowgong Polytechnic</h2>
+<p class="mb-4">Estd. 1961. A premier technical institution in Assam, committed to excellence and innovation in technical education.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined hover:text-blue-300 cursor-pointer transition-opacity opacity-80 hover:opacity-100">social_leaderboard</span>
+<span class="material-symbols-outlined hover:text-blue-300 cursor-pointer transition-opacity opacity-80 hover:opacity-100">public</span>
+<span class="material-symbols-outlined hover:text-blue-300 cursor-pointer transition-opacity opacity-80 hover:opacity-100">alternate_email</span>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Academic Links</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-blue-300 transition-colors" href="#">Course Catalog</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">Academic Calendar</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">Department Heads</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">Research Cell</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Resources</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-blue-300 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">RTI</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">AICTE Feedback</a></li>
+<li><a class="hover:text-blue-300 transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Contact Info</h4>
+<p class="mb-2 text-slate-400">Nowgong Polytechnic Campus</p>
+<p class="mb-2 text-slate-400">Nagaon, Assam - 782001</p>
+<p class="mb-2 text-slate-400">Phone: +91 3672 222XXX</p>
+<p class="text-blue-400">Email: office@nowgongpoly.edu.in</p>
+</div>
+<div class="md:col-span-4 pt-8 border-t border-slate-800 text-center">
+<p class="text-slate-500">© 2024 Nowgong Polytechnic. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- SideNavBar (Shared Component COMPONENTS_9) -->
+<aside class="fixed left-0 top-0 h-full w-64 hidden lg:flex flex-col bg-slate-50 dark:bg-slate-950 shadow-xl z-40 transition-transform duration-300 -translate-x-full hover:translate-x-0 peer rounded-r-xl">
+<div class="p-8 border-b border-outline-variant">
+<div class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center mb-4 mx-auto overflow-hidden">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+</div>
+<h2 class="font-headline text-lg font-bold text-center text-primary">Institution Menu</h2>
+<p class="text-[10px] uppercase font-sans tracking-wide text-center text-slate-500 mt-1">Academic Excellence Since 1961</p>
+</div>
+<nav class="flex-1 px-4 py-8 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 font-bold rounded-lg group transition-all ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="font-sans text-[10px] tracking-wide uppercase">News</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-sans text-[10px] tracking-wide uppercase">Academics</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">diversity_3</span>
+<span class="font-sans text-[10px] tracking-wide uppercase">Student Life</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">domain</span>
+<span class="font-sans text-[10px] tracking-wide uppercase">Infrastructure</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">science</span>
+<span class="font-sans text-[10px] tracking-wide uppercase">Research</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all ease-in-out duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-sans text-[10px] tracking-wide uppercase">Alumni</span>
+</a>
+</nav>
+</aside>
+</body></html>
