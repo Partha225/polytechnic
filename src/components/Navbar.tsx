@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { name: "About", href: "/" },
@@ -38,7 +41,7 @@ export default function Navbar() {
         ))}
       </nav>
       <div className="flex items-center gap-4">
-        <Link 
+        <Link
           href="/signup"
           className="hidden md:block text-primary font-bold hover:text-blue-800 transition-all text-sm px-4"
         >
@@ -47,7 +50,43 @@ export default function Navbar() {
         <Link href="https://dte.assam.gov.in/" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-8 py-3 rounded-full font-semibold shadow-xl hover:scale-105 transition-transform">
           Admissions
         </Link>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden text-slate-600 hover:text-primary transition-colors"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+      {isOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-4">
+          <nav className="flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className={`${
+                  pathname === link.href
+                    ? "text-secondary border-b-2 border-secondary font-semibold"
+                    : "text-slate-600 font-medium hover:text-secondary"
+                } transition-colors duration-300 py-2`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link
+              href="/signup"
+              className="text-primary font-bold hover:text-blue-800 transition-all py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Student Info
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
